@@ -1,22 +1,28 @@
 // document.write("Hello World!");
 
 function yard() {
-    let x = document.getElementById("value").value;
-    const yard = parseFloat(x) / 36;
+    let inches = document.getElementById("lengthInput").value;
+    const yard = 36;
+    const ans = inches / yard;
 
-    alert("The value is " + yard + " yard/yards.");
+    document.getElementById("result").innerHTML = ans;
+    document.getElementById("resultUnit").innerHTML = "Yards";
 }
 
 function meter() {
-    let x = document.getElementById("value").value;
-    const meter = parseFloat(x) / 39.37;
+    let inches = document.getElementById("lengthInput").value;
+    const meter = 39.37;
+    const ans = inches / meter;
 
-    alert("The value is " + meter + " meter/meters.");
+    document.getElementById("result").innerHTML = ans;
+    document.getElementById("resultUnit").innerHTML = "Meters";
 }
 
 function feet() {
-    let x = document.getElementById("value").value;
-    const feet = parseFloat(x) / 12;
+    let inches = document.getElementById("lengthInput").value;
+    const feet = 12;
+    const ans = inches / feet;
 
-    alert("The value is " + feet + " foot/feet.");
+    document.getElementById("result").innerHTML = ans;
+    document.getElementById("resultUnit").innerHTML = "Feet";
 }

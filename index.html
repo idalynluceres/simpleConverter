@@ -18,17 +18,26 @@
         <i class="fa-solid fa-ruler"></i>
     </h1>
     <hr style="margin-left: 80px; margin-right: 80px;" class="fw-bold">
-    <form action="#" method="" style="font-family: 'Poppins', sans-serif; border: 2px solid white; width: 50%; text-align: center; margin-left: 200px; color: white; background: rgb(73, 67, 67);" class="card-block text-center mt-5 p-3">
+    <form action="#" method="" style="font-family: 'Poppins', sans-serif; border: 2px solid white; width: 50%; text-align: center; margin-left: 300px; color: white; background: rgb(99, 93, 93);" class="card-block text-center mt-5 p-3">
         <div>
-            <label for="value">Inch/Inches:</label>
-            <input type="number" id="value">
+            <label for="lengthInput">Inches:</label>
+            <input type="number" min="0" placeholder="Enter Value" id="lengthInput">
         </div>
-        <div class="mt-3">
-            <button onClick="yard()">Yard</button>
-            <button onClick="meter()">Meter</button>
-            <button onClick="feet()">Feet</button>
+        <div class="mt-3" style="margin-left: 60px;">
+            <button onClick="yard()" style="border: 1px solid white;">
+                Yard
+            </button>
+            <button onClick="meter()" style="border: 1px solid white;">
+                Meter
+            </button>
+            <button onClick="feet()" style="border: 1px solid white;">
+                Feet
+            </button>
         </div>
-
+        <div class="mt-4" style="border: 2px solid white; width: 400px; margin-left: 100px;">
+            <h4 id="result" class="m-2">0</h4>
+            <h4 id="resultUnit">Unit</h4>
+        </div>
     </form>
 
     <!-- JS Link -->
